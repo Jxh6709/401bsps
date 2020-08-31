@@ -1,5 +1,6 @@
 ---
 name: Third Party Integrations
-image: https://picsum.photos/1800/1801
+image: /uploads/cat-1045782_1920.jpg
+description: Here's a description
 ---
 Extend the functionality of Awake with third party integrations
