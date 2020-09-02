@@ -1,8 +1,8 @@
 <template>
   <div id="contact-page" class="page-wrapper contact-page content-page">
     <site-hero
-      title="Contact Us"
-      subtitle="BERGEN SWAMP PRESERVATION SOCIETY"
+      title="BERGEN SWAMP PRESERVATION SOCIETY"
+      subtitle="Contact Us"
       image="/uploads/contact-hero.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
@@ -32,16 +32,16 @@
                   </strong>
                 </p>
                 <p>
-                  Address: P.O. Box 460, Bergen, NY 14416-0460
+                  <b>Address:</b> P.O. Box 460, Bergen, NY 14416-0460
                 </p>
                 <p>
-                  Country: USA
+                  <b>Country:</b> USA
                 </p>
                 <p>
-                  E-mail: bsps@bergenswamp.org
+                  <b>E-mail:</b> bsps@bergenswamp.org
                 </p>
                 <p>
-                  Phone: (585) 548-7304
+                  <b>Phone:</b> (585) 548-7304
                 </p>
               </div>
             </article>
