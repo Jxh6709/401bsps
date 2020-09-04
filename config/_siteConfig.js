@@ -12,7 +12,7 @@ export default {
   siteName: 'Awake',
   tagline: 'A Nuxt.js Theme for Netlify CMS',
   featureImage: '/uploads/home-hero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  logo: 'logo.svg', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
