@@ -17,14 +17,14 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Category", name: "category", widget: "relation", collection: "categories", searchFields: ["name"], valueField: "name", multiple: true}
+      - {label: "Trail", name: "trail", widget: "relation", collection: "trails", searchFields: ["name"], valueField: "name", multiple: true}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featureImage", widget: "image"}
       - {label: "Video", name: "video", widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "categories"
-    label: "Categories"
+  - name: "properties"
+    label: "Properties"
     folder: "content/categories"
     create: true
     slug: "{{slug}}"
@@ -33,3 +33,15 @@ collections:
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
+  - name: "trails"
+    label: "Trails"
+    folder: "content/trails"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Property", name: "property", widget: "relation", collection: "properties", searchFields: ["name"], valueField: "name", multiple: true}
+      - {label: "Description", name: "description", widget: "markdown"}
+    
