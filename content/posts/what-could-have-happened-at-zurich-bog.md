@@ -4,6 +4,8 @@ subtitle: Zurich Bog
 category:
   - Zurich Bog
   - All categories
+trail:
+  - Pocock Trail
 author: Steve Locke
 date: 2020-09-02T23:37:30.653Z
 featureImage: /uploads/post3.png
