@@ -57,9 +57,7 @@ export default {
       margin: 5px;
       max-height: initial;
     }
-    &.blink {
-      animation: logoBlink 0.2s steps(8, end) alternate;
-    }
+    
   }
 }
 </style>
