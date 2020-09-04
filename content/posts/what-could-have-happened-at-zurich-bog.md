@@ -1,5 +1,5 @@
 ---
-title: WHAT COULD HAVE HAPPENED AT ZURICH BOG?
+title: WHAT COULD HAVE HAPPENED AT ZURICH BOG??
 subtitle: Zurich Bog
 category:
   - Zurich Bog
