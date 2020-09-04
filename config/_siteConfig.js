@@ -27,17 +27,12 @@ export default {
       link: '/contact'
     },
     {
-      name: 'Categories',
+      name: 'Properties',
       link: '/categories'
     },
     {
       name: 'Github Repo',
       link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
-      target: '_blank'
-    },
-    {
-      name: 'Awake+ Premium',
-      link: 'https://awake-premium-lp.netlify.com/',
       target: '_blank'
     }
   ],
