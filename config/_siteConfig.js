@@ -12,7 +12,7 @@ export default {
   siteName: 'Bergen Swamp Preservation Society',
   tagline: 'Conserving the flora and fauna of Upstate New York ',
   featureImage: '/uploads/firsthero.jpg',
-  logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
+  logo: 'bsps_logo.jpg', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
