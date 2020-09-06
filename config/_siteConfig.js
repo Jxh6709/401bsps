@@ -9,9 +9,9 @@ import theCMS from '../cms/netlify/cms'
  * General Site configurations
  */
 export default {
-  siteName: 'Awake',
-  tagline: 'A Nuxt.js Theme for Netlify CMS',
-  featureImage: '/uploads/home-hero.jpg',
+  siteName: 'Bergen Swamp Preservation Society',
+  tagline: 'Conserving the flora and fauna of its Upstate New York ',
+  featureImage: '/uploads/pocock5.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
@@ -31,13 +31,13 @@ export default {
       link: '/categories'
     },
     {
-      name: 'Github Repo',
-      link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
-      target: '_blank'
-    }
+        name: 'Github Repo',
+        link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
+        target: '_blank'
+      }
   ],
   hero: {
-    theme: 'dark' // options: mist, light, dark
+    theme: 'light' // options: mist, light, dark
   },
 
   // Main Layout/Style
