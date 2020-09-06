@@ -10,8 +10,8 @@ import theCMS from '../cms/netlify/cms'
  */
 export default {
   siteName: 'Bergen Swamp Preservation Society',
-  tagline: 'Conserving the flora and fauna of its Upstate New York ',
-  featureImage: '/uploads/pocock5.jpg',
+  tagline: 'Conserving the flora and fauna of Upstate New York ',
+  featureImage: '/uploads/firsthero.jpg',
   logo: 'logo-component', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
@@ -37,7 +37,7 @@ export default {
       }
   ],
   hero: {
-    theme: 'light' // options: mist, light, dark
+    theme: 'mist' // options: mist, light, dark
   },
 
   // Main Layout/Style
