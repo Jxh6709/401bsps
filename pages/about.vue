@@ -8,40 +8,37 @@
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <div class="content">
-          <h3>Fake Heading</h3>
-          <p>
-            <strong>
-              Edit this page in<code>/pages/about.vue</code>to fit your needs.
-            </strong>
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit!
-          </p>
+          <h3>The Society is chartered with a three-fold purpose</h3>
+          <ol>
+            <li>To conserve the flora and fauna of the lands owned by the society. The society holds five properties as sanctuaries to upstate New York 's native flora and fauna. The public is welcome to visit our properties with no charge, but visitors must stay on marked trails. </li>
+            <li>2. To offer schools, colleges, and accredited groups access for the purpose of research and study.In the past ten years, our properties have hosted 6 Doctorial thesis, 8 master 's thesis, 2 undergraduate senior projects, and 8 high school research projects entered into national and state science competitions.<br>In the past 10 years our properties have been an "outdoor classroom " and visited yearly by undergraduate colleges, community colleges, high schools, primary schools, and many different organizations. For information on how to schedule your group visit please refer to our Our Visitor Policy page. </li>
+            <li>3. To publish scientific and cultural information pertaining to the Society lands.
+The society publishes a biannual newsletter to the membership and presents in New York wetland conferences. </li>
+          </ol>
 
-          <h3>Another Fake Heading</h3>
+          <strong>If you are interested in doing research for the Bergen Swamp Preservation Society please review our <a href="research.html">Research Rules</a> page. </strong>
+
+          <h3>We are Dedicated Conservationists</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit!
-          </p>
-          <quote-card />
-          <h3>Still More Fake Content</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-            eligendi impedit inventore ipsa laboriosam libero magnam modi odio,
-            sunt temporibus. Distinctio doloremque eum magni nostrum quasi
-            ratione rem repudiandae sit! Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit.
-            <strong>Alias aut facere harum ipsam</strong> quibusdam quidem
-            quisquam saepe? Alias architecto blanditiis consequatur consequuntur
-            dicta ipsa iste modi provident, quod, similique veritatis.
+            John Adamski - President
+            <br>
+            Lynn Braband - Vice-President
+            <br>
+            Steve Locke - Past President
+            <br>
+            Lee Blair, Jr - Bergen Stewerdship Chair
+            <br>
+            Joan Kennedy - Treasurer
+            <br>
+            Bill Des Jardin - Membership Chair
+            <br>
+            Barb Drake - Scientific and Education Chair
+            <br>
+            Mike Deming - Finance Chair
           </p>
         </div>
 
+<!--
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box">
@@ -84,7 +81,7 @@
           </div>
         </div>
       </template>
-
+-->
       <template v-slot:sidebar>
         <h3 class="subtitle is-4">
           Latest Posts
