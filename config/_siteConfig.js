@@ -12,7 +12,7 @@ export default {
   siteName: 'Bergen Swamp Preservation Society',
   tagline: 'Conserving the flora and fauna of Upstate New York ',
   featureImage: '/uploads/firsthero.jpg',
-  logo: '/uploads/bsps_logo.jpg', // 'logo-component', // or '/logo.svg' for regular image
+  logo: '/uploads/bsps_logo.svg', // 'logo-component', // or '/logo.svg' for regular image
   googleAnalytics: {
     on: true,
     id: process.env.GOOGLE_ANALYTICS_ID
@@ -31,10 +31,10 @@ export default {
       link: '/categories'
     },
     {
-        name: 'Github Repo',
-        link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
-        target: '_blank'
-      }
+      name: 'Github Repo',
+      link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
+      target: '_blank'
+    }
   ],
   hero: {
     theme: 'dark' // options: mist, light, dark

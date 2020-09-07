@@ -12,8 +12,7 @@
           <ol>
             <li>To conserve the flora and fauna of the lands owned by the society. The society holds five properties as sanctuaries to upstate New York 's native flora and fauna. The public is welcome to visit our properties with no charge, but visitors must stay on marked trails. </li>
             <li>To offer schools, colleges, and accredited groups access for the purpose of research and study.In the past ten years, our properties have hosted 6 Doctorial thesis, 8 master 's thesis, 2 undergraduate senior projects, and 8 high school research projects entered into national and state science competitions.<br>In the past 10 years our properties have been an "outdoor classroom " and visited yearly by undergraduate colleges, community colleges, high schools, primary schools, and many different organizations. For information on how to schedule your group visit please refer to our Our Visitor Policy page. </li>
-            <li>To publish scientific and cultural information pertaining to the Society lands.
-The society publishes a biannual newsletter to the membership and presents in New York wetland conferences. </li>
+            <li>To publish scientific and cultural information pertaining to the Society lands. The society publishes a biannual newsletter to the membership and presents in New York wetland conferences. </li>
           </ol>
 
           <strong>If you are interested in doing research for the Bergen Swamp Preservation Society please review our <a href="research.html">Research Rules</a> page. </strong>
@@ -37,8 +36,7 @@ The society publishes a biannual newsletter to the membership and presents in Ne
             Mike Deming - Finance Chair
           </p>
         </div>
-
-<!--
+        <!--
         <div class="tile is-ancestor">
           <div class="tile is-parent">
             <article class="tile is-child box">
@@ -91,6 +89,8 @@ The society publishes a biannual newsletter to the membership and presents in Ne
     </main-section>
   </div>
 </template>
+
+<!--
 <script>
 import QuoteCard from '~/components/cards/QuoteCard'
 export default {
@@ -102,3 +102,4 @@ export default {
   components: { QuoteCard }
 }
 </script>
+-->

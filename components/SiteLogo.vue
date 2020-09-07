@@ -57,7 +57,6 @@ export default {
       margin: 5px;
       max-height: initial;
     }
-    
   }
 }
 </style>
