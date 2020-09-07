@@ -3,7 +3,7 @@
     <site-hero
       title="BERGEN SWAMP PRESERVATION SOCIETY"
       subtitle="Contact Us"
-      image="/uploads/contact-hero.jpg"
+      image="/uploads/third.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
@@ -14,7 +14,7 @@
                 Hello!
               </p>
               <p class="subtitle">
-                What can I do for you?
+                What can we do for you?
               </p>
               <figure class="image is-1by1 ">
                 <opti-image
