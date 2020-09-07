@@ -12,7 +12,7 @@ $twitter-invert: findColorInvert($twitter);
 $colors: (
   "white": ($white, $black),
   "black": ($black, $white),
-  "light": ($primary, $light-invert),
+  "light": ($light, $light-invert),
   "dark": ($dark, $dark-invert),
   "primary": ($primary, $primary-invert),
   "info": ($info, $info-invert),
