@@ -1,7 +1,7 @@
 <template>
   <div id="contact-page" class="page-wrapper contact-page content-page">
     <site-hero
-      title="BERGEN SWAMP PRESERVATION SOCIETY"
+      title="Bergen Swamp Preservation Society"
       subtitle="Contact Us"
       image="/uploads/third.jpg"
     ></site-hero>

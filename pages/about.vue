@@ -88,7 +88,15 @@
     </main-section>
   </div>
 </template>
-
+<script>
+export default {
+  head() {
+    return {
+      title: `About | ${this.$siteConfig.siteName}`
+    }
+  }
+}
+</script>
 <!--
 <script>
 import QuoteCard from '~/components/cards/QuoteCard'
