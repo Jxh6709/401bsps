@@ -14,9 +14,6 @@
             <li>To offer schools, colleges, and accredited groups access for the purpose of research and study.In the past ten years, our properties have hosted 6 Doctorial thesis, 8 master 's thesis, 2 undergraduate senior projects, and 8 high school research projects entered into national and state science competitions.<br>In the past 10 years our properties have been an "outdoor classroom " and visited yearly by undergraduate colleges, community colleges, high schools, primary schools, and many different organizations. For information on how to schedule your group visit please refer to our Our Visitor Policy page. </li>
             <li>To publish scientific and cultural information pertaining to the Society lands. The society publishes a biannual newsletter to the membership and presents in New York wetland conferences. </li>
           </ol>
-
-          <strong>If you are interested in doing research for the Bergen Swamp Preservation Society please review our <a href="research.html">Research Rules</a> page. </strong>
-
           <h3>We are Dedicated Conservationists</h3>
           <p>
             John Adamski - President
@@ -35,6 +32,8 @@
             <br>
             Mike Deming - Finance Chair
           </p>
+          <!--TODO: Broken link - Jordan -->
+          <strong>If you are interested in doing research for the Bergen Swamp Preservation Society please review our <a href="research.html">Research Rules</a> page. </strong>
         </div>
         <!--
         <div class="tile is-ancestor">
