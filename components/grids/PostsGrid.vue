@@ -1,7 +1,7 @@
 <template>
   <resource-grid
     v-bind="$props"
-    :resource="$cms.post"
+    :resource="$cms.trail"
     :theme="$siteConfig.posts.theme || $siteConfig.cards.theme || null"
   >
     <template v-slot:default="{ item }">
