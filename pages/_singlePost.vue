@@ -14,6 +14,10 @@
     <main-section :one-column-constrained="true">
       <template v-slot:default>
         <div class="post-wrapper">
+          <div v-if="video">
+            <video controls :src="video">
+            </video>
+          </div>
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
             <h6 class="subtitle is-size-4">
@@ -47,6 +51,7 @@ export default {
       'title',
       'subtitle',
       'featureImage',
+      'video',
       'underSubtitle',
       'author',
       'category',
