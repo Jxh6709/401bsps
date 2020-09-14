@@ -24,7 +24,7 @@ collections:
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featureImage", widget: "image"}
-      - {label: "Video", name: "video", widget: "file", required: false}
+      - {label: "Video", name: "video", pattern: ['/\.(mp4|mov|tiff?|png|webp|bmp)$/i', "Must be a video"], widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "properties"
     label: "Properties"
