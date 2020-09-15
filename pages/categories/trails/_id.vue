@@ -32,7 +32,7 @@
   </div>
 </template>
 <script>
-import { setPageData } from '../../helper'
+import { setPageData } from '../../../helper'
 export default {
   data() {
     return {
