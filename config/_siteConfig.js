@@ -29,11 +29,6 @@ export default {
     {
       name: 'Properties',
       link: '/categories'
-    },
-    {
-      name: 'Github Repo',
-      link: 'https://github.com/BergenSwampExperience/bergenSwampAlt',
-      target: '_blank'
     }
   ],
   hero: {
