@@ -15,7 +15,7 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <div v-if="video">
-            <video controls :src="video">
+            <video controls :src="responsiveVideo.src">
             </video>
           </div>
           <markdown :markdown="$store.state.content" />
@@ -62,6 +62,12 @@ export default {
     },
     url() {
       return `${process.env.URL}/${this.$route.fullPath}`
+    },
+    responsiveVideo() {
+      if (this.video.indexOf('/uploads') === 0) {
+        return require(`~/assets${this.video}`)
+      }
+      return { src: this.video, srcSet: '' }
     }
   },
   fetch({ store, params }) {
