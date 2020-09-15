@@ -13,6 +13,7 @@
           :alt="$siteConfig.siteName"
           class="logo"
         />
+        <span style="margin-left:5px;">Bergen Swamp Preservation Society</span>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
