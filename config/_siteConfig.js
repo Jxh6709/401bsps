@@ -51,7 +51,7 @@ export default {
   disqus: {
     on: true,
     loadingStrategy: 'button', // Options: onload, lazy, button
-    siteShortName: 'blog-bergenswamp-io' // 'blog-danielkelly-io'
+    siteShortName: 'bergenswamp-netlify-app' // 'blog-danielkelly-io'
   },
 
   // Newsletter Subscribe
