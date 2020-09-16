@@ -17,6 +17,7 @@
           <div v-if="video">
             <video controls :src="video">
             </video>
+            {{trail}}
           </div>
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
@@ -65,7 +66,7 @@ export default {
       return `${process.env.URL}/${this.$route.fullPath}`
     },
     responsiveVideo() {
-      if (this.video.indexOf('/uploads') === 0) {
+      if (this.video) {
         return require(`~/assets${this.video}`)
       }
       return { src: this.video, srcSet: '' }
@@ -75,7 +76,7 @@ export default {
     setPageData(store, { resource: 'post', slug: params.singlePost })
     console.log(this);
     console.log(this.video);
-    //console.log(this.responsiveVideo);
+    console.log(this.responsiveVideo);
   }
 }
 </script>
