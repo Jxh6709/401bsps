@@ -17,7 +17,6 @@
           <div v-if="video">
             <video controls :src="video">
             </video>
-            {{trail}}
           </div>
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">

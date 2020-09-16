@@ -1,4 +1,6 @@
 <template>
+
+  {{$cms}}
   <resource-grid
     v-bind="$props"
     :resource="$cms.post"
