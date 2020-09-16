@@ -75,7 +75,7 @@ export default {
     setPageData(store, { resource: 'post', slug: params.singlePost })
     console.log(this);
     console.log(this.video);
-    console.log(this.responsiveVideo);
+    //console.log(this.responsiveVideo);
   }
 }
 </script>
