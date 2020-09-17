@@ -1,6 +1,4 @@
 <template>
-
-  {{$cms}}
   <resource-grid
     v-bind="$props"
     :resource="$cms.post"
@@ -13,9 +11,10 @@
         :image="item.featureImage"
         :author="item.author"
         :date="item.date"
+        :tags="item.tags"
       />
       <div>
-        {{item}}
+        
       </div>
     </template>
   </resource-grid>

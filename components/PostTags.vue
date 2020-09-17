@@ -1,14 +1,21 @@
 <template>
    <div class="post-tags">
-   		<nuxt-link class="post-tags__link" v-for="tag in post.tags" :key="tag.id" :to="tag.path">
-   			<span>#</span> {{ tag.title }}
+   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" >
+   			<span>#</span> {{ tag }}
    		</nuxt-link>
     </div>
 </template>
 
 <script>
 export default {
-  props: ['post']
+  props: {
+	tags: {
+      type: Array,
+      default() {
+        return ["test tag"]
+      }
+    },
+  }
 }
 </script>
 

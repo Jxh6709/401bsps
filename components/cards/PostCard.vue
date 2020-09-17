@@ -18,12 +18,14 @@
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
     </span>
+    <PostTags class="tags" :tags="tags"></PostTags>
   </generic-card>
 </template>
 
 <script>
 import GenericCard from './GenericCard'
 import { getFormattedDate } from '~/helper'
+import PostTags from '../PostTags'
 export default {
   components: { GenericCard },
   props: {
@@ -46,7 +48,13 @@ export default {
     author: {
       type: String,
       default: ''
-    }
+    },
+    tags: {
+      type: Array,
+      default() {
+        return ["test tag"]
+      }
+    },
   },
   computed: {
     datePretty() {
@@ -55,3 +63,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.tags {
+    z-index: 1;
+    position: relative;
+  }
+</style>
