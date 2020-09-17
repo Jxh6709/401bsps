@@ -15,8 +15,8 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <div v-if="video">
-            <video controls :src="responsiveVideo.src">
-            </video>
+            <object :src="responsiveVideo.src">
+            </object>
           </div>
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
@@ -65,6 +65,8 @@ export default {
       return `${process.env.URL}/${this.$route.fullPath}`
     },
     responsiveVideo() {
+      console.log(this.video);
+      console.log(this.$store);
       if (this.video) {
         return require(`~/assets${this.video}`)
       }
@@ -73,9 +75,6 @@ export default {
   },
   fetch({ store, params }) {
     setPageData(store, { resource: 'post', slug: params.singlePost })
-    console.log(this);
-    console.log(this.video);
-    console.log(this.responsiveVideo);
   }
 }
 </script>
