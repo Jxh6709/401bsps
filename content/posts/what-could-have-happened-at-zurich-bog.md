@@ -6,7 +6,7 @@ trail:
 author: Steve Locke
 date: 2020-09-02T23:37:30.653Z
 featureImage: /uploads/post3.png
-video: /uploads/the-best-bloopers-from-lucifer-_-netflix.mp4
+video: /uploads/video.mp4
 tags:
   - Pocock Trail
 category:
