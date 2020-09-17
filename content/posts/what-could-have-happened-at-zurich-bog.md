@@ -6,7 +6,7 @@ trail:
 author: Steve Locke
 date: 2020-09-02T23:37:30.653Z
 featureImage: /uploads/post3.png
-video: ""
+video: /uploads/2020-06-28-21-44-50.mov
 tags:
   - Pocock Trail
 category:
