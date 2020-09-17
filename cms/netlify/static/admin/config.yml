@@ -26,6 +26,11 @@ collections:
       - {label: "Featured Image", name: "featureImage", widget: "image"}
       - {label: "Video", name: "video", pattern: ['/\.(mp4|mov|tiff?|png|webp|bmp)$/i', "Must be a video"], widget: "file", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: {label: Name, name: name, widget: string, default: "tag"}
+      
   - name: "properties"
     label: "Properties"
     folder: "content/categories"
