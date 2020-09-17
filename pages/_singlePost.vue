@@ -16,7 +16,7 @@
         <div class="post-wrapper">
           <div v-if="video">
             {{responsiveVideo}}
-            <video controls :src="responsiveVideo.src">
+            <video controls :src="responsiveVideo">
             </video>
           </div>
           <markdown :markdown="$store.state.content" />
