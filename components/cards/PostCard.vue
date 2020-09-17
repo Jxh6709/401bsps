@@ -9,7 +9,7 @@
         null
     "
   >
-  <div v-slot:author>
+  <template v-slot:default>
      <span
       v-if="author && $siteConfig.posts.displayAuthor"
       class="author-wrapper"
@@ -19,14 +19,14 @@
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
     </span>
-  </div>
+  </template>
    
     {{tags}}
-    <div v-slot:tags class="post-tags">
+    <template v-slot:tags class="post-tags">
    		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag">
    			<span>#</span> {{ tag }}
    		</nuxt-link>
-    </div>
+    </template>
   </generic-card>
 </template>
 
