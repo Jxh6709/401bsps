@@ -15,6 +15,7 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <div v-if="video">
+            {{responsiveVideo}}
             <video controls :src="responsiveVideo.src">
             </video>
           </div>
