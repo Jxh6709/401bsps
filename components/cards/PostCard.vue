@@ -19,14 +19,14 @@
       <strong>Published on:</strong> {{ datePretty }}
     </span>
     {{tags}}
-    <PostTags class="tags" :tags="tags"></PostTags>
+    <post-tags class="tags" :tags="tags"></post-tags>
   </generic-card>
 </template>
 
 <script>
 import GenericCard from './GenericCard'
 import { getFormattedDate } from '~/helper'
-import PostTags from '../PostTags'
+import PostTags from '~/components/PostTags'
 export default {
   components: { GenericCard },
   props: {
