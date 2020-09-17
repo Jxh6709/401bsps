@@ -14,7 +14,6 @@
         :tags="item.tags"
       />
       <div>
-        
       </div>
     </template>
   </resource-grid>

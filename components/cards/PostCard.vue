@@ -18,6 +18,7 @@
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
     </span>
+    {{tags}}
     <PostTags class="tags" :tags="tags"></PostTags>
   </generic-card>
 </template>
@@ -68,5 +69,6 @@ export default {
 .tags {
     z-index: 1;
     position: relative;
+    width: 2em;
   }
 </style>

@@ -1,5 +1,7 @@
 <template>
    <div class="post-tags">
+	   HELP
+	   {{tags}}
    		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" >
    			<span>#</span> {{ tag }}
    		</nuxt-link>
