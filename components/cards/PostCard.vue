@@ -19,14 +19,17 @@
       <strong>Published on:</strong> {{ datePretty }}
     </span>
     {{tags}}
-    <post-tags class="tags" :tags="tags"></post-tags>
+    <div class="post-tags">
+   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/" >
+   			<span>#</span> {{ tag }}
+   		</nuxt-link>
+    </div>
   </generic-card>
 </template>
 
 <script>
 import GenericCard from './GenericCard'
 import { getFormattedDate } from '~/helper'
-import PostTags from '~/components/PostTags'
 export default {
   components: { GenericCard },
   props: {
@@ -71,4 +74,19 @@ export default {
     position: relative;
     width: 2em;
   }
+
+.post-tags {
+  margin: 1em 0 0;
+
+  &__link {
+  	margin-right: .7em;
+  	font-size: .8em;
+  	color: skyblue;
+  	text-decoration: none;
+  	background-color: red;
+  	color: black!important; //Todo: remove important;
+  	padding: .5em;
+  	border-radius: 10px;
+  }
+}
 </style>
