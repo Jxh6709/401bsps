@@ -15,8 +15,8 @@
       <template v-slot:default>
         <div class="post-wrapper">
           <div v-if="video">
-            <object :src="responsiveVideo.src">
-            </object>
+            <video controls :src="responsiveVideo.src">
+            </video>
           </div>
           <markdown :markdown="$store.state.content" />
           <div class="other-posts">
@@ -66,10 +66,11 @@ export default {
     },
     responsiveVideo() {
       console.log(this.video);
-      console.log(this.$store);
       if (this.video) {
+        console.log("requiring");
         return require(`~/assets${this.video}`)
       }
+      console.log("returning");
       return { src: this.video, srcSet: '' }
     }
   },
