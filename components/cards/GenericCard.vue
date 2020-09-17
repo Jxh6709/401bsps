@@ -36,9 +36,10 @@
                 'empty-content-placeholder': !$slots.default
               }"
             >
-              <slot></slot>
+              <slot name="author"></slot>
             </h4>
           </nuxt-link>
+          <slot name="tags"></slot>
         </div>
       </div>
     </div>
