@@ -20,7 +20,7 @@
     </span>
     {{tags}}
     <div class="post-tags">
-   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/" >
+   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag">
    			<span>#</span> {{ tag }}
    		</nuxt-link>
     </div>
