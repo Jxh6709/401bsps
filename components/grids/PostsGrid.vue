@@ -14,6 +14,9 @@
         :author="item.author"
         :date="item.date"
       />
+      <div>
+        {{item}}
+      </div>
     </template>
   </resource-grid>
 </template>
