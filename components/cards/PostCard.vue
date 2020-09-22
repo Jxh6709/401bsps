@@ -22,11 +22,11 @@
   </template>
    
     {{tags}}
-    <template v-slot:tags class="post-tags">
-   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag">
+    <!-- <template v-slot:tags class="post-tags">
+   		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/">
    			<span>#</span> {{ tag }}
    		</nuxt-link>
-    </template>
+    </template> -->
   </generic-card>
 </template>
 
