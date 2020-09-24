@@ -1,4 +1,4 @@
-<template v-slot:test>
+<template test>
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
       title="About Us"
