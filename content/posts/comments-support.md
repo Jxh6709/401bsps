@@ -1,7 +1,8 @@
 ---
 title: Comments Supports
 subtitle: Add Comments to Posts With Disqus
-category: Bergen Swamp
+category: 
+  - Bergen Swamp
 trail:
   - Bergen Swamp
 author: Daniel Kelly
