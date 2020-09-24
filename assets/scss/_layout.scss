@@ -44,4 +44,7 @@ blockquote{
 dt {
   font-weight: bold;
 }
+
+.dynamicVideo{text-align: center;}
+.dynamicVideo > video{width: 100%;}
 /* purgecss end ignore */
