@@ -1,4 +1,4 @@
-<template>
+<template v-slot:test>
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
       title="About Us"
@@ -6,8 +6,7 @@
       image="/uploads/fourth.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
-      <template test>
-      <!-- <template v-slot:default> -->
+      <template v-slot:default>
         <div class="content">
           <h3>The Society is chartered with a three-fold purpose</h3>
           <ol>
