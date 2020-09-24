@@ -6,7 +6,7 @@
       image="/uploads/fourth.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
-      <template v-slot:test>
+      <template test>
       <!-- <template v-slot:default> -->
         <div class="content">
           <h3>The Society is chartered with a three-fold purpose</h3>
