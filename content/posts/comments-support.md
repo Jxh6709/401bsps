@@ -1,8 +1,10 @@
 ---
 title: Comments Supports
 subtitle: Add Comments to Posts With Disqus
-category: 
+category:
   - Bergen Swamp
+  - Zurich Bog
+  - All categories
 trail:
   - Bergen Swamp
 author: Daniel Kelly
