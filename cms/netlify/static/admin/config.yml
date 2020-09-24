@@ -20,7 +20,7 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
-      - {label: "Trail", name: "trail", widget: "relation", collection: "trails", searchFields: ["name"], valueField: "name", multiple: true}
+      - {label: "Trail", name: "trail", widget: "relation", collection: "properties", searchFields: ["name"], valueField: "name", multiple: true}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featureImage", widget: "image"}
