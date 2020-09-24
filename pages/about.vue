@@ -1,4 +1,4 @@
-<template test>
+<template>
   <div id="about-page" class="page-wrapper about-page content-page">
     <site-hero
       title="About Us"

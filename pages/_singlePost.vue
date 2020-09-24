@@ -14,7 +14,7 @@
     <main-section :one-column-constrained="true">
       <template v-slot:default>
         <div class="post-wrapper">
-          <div v-if="video">
+          <div v-if="video" class="dynamicVideo">
             <video controls :src="responsiveVideo">
             </video>
           </div>
