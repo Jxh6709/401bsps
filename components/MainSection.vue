@@ -1,5 +1,5 @@
 <template>
-  <main class="section page-main-section">
+  <main class="testEdit">
     <div class="container">
       <div class="columns">
         <aside
