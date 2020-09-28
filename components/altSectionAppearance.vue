@@ -67,7 +67,7 @@ export default {
     border-right: 1px solid #eee;
   }
 }
-.dynamicVideo > video{
+.newAppearance .dynamicVideo > video{
     width: 50%;
     float: left;
     margin-right: 10px;
