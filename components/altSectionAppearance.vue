@@ -1,5 +1,5 @@
 <template>
-  <main class="section page-main-section">
+  <main class="section newAppearance">
     <div class="container">
       <div class="columns">
         <aside
@@ -32,7 +32,7 @@
 </template>
 <script>
 export default {
-  name: 'MainSection',
+  name: 'altAppearance',
   props: {
     oneColumnConstrained: { type: Boolean, default: false },
     theme: { type: String, default: '' }
@@ -66,5 +66,11 @@ export default {
   &.left-sidebar {
     border-right: 1px solid #eee;
   }
+}
+.dynamicVideo > video{
+    width: 50%;
+    display: inline;
+    flaot: left;
+    margin-right: 10px;
 }
 </style>

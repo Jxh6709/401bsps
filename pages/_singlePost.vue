@@ -39,10 +39,12 @@
 import { mapState } from 'vuex'
 import { setPageData, getFormattedDate } from '../helper'
 // import 'highlight.js/styles/github.css'
+import altAppearance from '~/components/altSectionAppearance'
 import Markdown from '~/components/Markdown'
 import PostSidebar from '~/components/PostSidebar'
 export default {
   components: {
+    altAppearance,
     Markdown,
     PostSidebar
   },
