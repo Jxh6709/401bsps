@@ -44,7 +44,7 @@ import Markdown from '~/components/Markdown'
 import PostSidebar from '~/components/PostSidebar'
 export default {
   components: {
-    // altAppearance,
+    altAppearance,
     Markdown,
     PostSidebar
   },
