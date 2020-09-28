@@ -44,8 +44,6 @@ export default {
   },
   async created() {
     this.allCats = await this.$cms.category.getAll()
-
-    console.log(this.$cms);
   }
 }
 </script>

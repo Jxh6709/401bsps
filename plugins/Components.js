@@ -10,8 +10,8 @@ import SiteFooter from '../components/SiteFooter'
 import SiteHero from '../components/SiteHero'
 import SiteLogo from '../components/SiteLogo'
 import SiteNav from '../components/SiteNav'
-import ResourceGrid from '~/components/grids/ResourceGrid'
 import altAppearance from '../components/altSectionAppearance'
+import ResourceGrid from '~/components/grids/ResourceGrid'
 
 Vue.component(CategoriesGrid.name, CategoriesGrid)
 Vue.component(DisqusComments.name, DisqusComments)
@@ -24,5 +24,5 @@ Vue.component(SiteFooter.name, SiteFooter)
 Vue.component(SiteHero.name, SiteHero)
 Vue.component(SiteLogo.name, SiteLogo)
 Vue.component(SiteNav.name, SiteNav)
-Vue.component(ResourceGrid.name, ResourceGrid)
 Vue.component(altAppearance.name, altAppearance)
+Vue.component(ResourceGrid.name, ResourceGrid)
