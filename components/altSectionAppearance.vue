@@ -69,8 +69,7 @@ export default {
 }
 .dynamicVideo > video{
     width: 50%;
-    display: inline;
-    flaot: left;
+    float: left;
     margin-right: 10px;
 }
 </style>
