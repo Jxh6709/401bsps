@@ -45,7 +45,7 @@ export default {
       if (this.$siteConfig.layout.theme) {
         return this.$siteConfig.layout.theme
       }
-      return 'one-column'
+      return 'introMedia'
     }
   }
 }
