@@ -26,7 +26,12 @@
           {{ datePretty }}
         </span>
       </h4>
-      {{tags}}
+      <div class="tags">
+        <div v-for="tag in tags" :key="tag">
+           {{ tag }}
+        </div>
+
+      </div>
     </template>
     {{tags}}
     <!-- <template v-slot:tags class="post-tags">
@@ -97,6 +102,43 @@ export default {
     color: black !important; //Todo: remove important;
     padding: 0.5em;
     border-radius: 10px;
+  }
+}
+</style>
+
+<style scoped lang="scss">
+.subtitle {
+  opacity: 0.5;
+  font-size: 0.8rem;
+}
+.empty-content-placeholder {
+  background: transparent;
+  color: transparent;
+  position: relative;
+  height: 1em;
+  &:before {
+    transform-origin: left;
+    content: '';
+    background: #eee;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    animation: fillHorizontal 2s linear infinite;
+  }
+  &.subtitle {
+    width: 70%;
+  }
+}
+</style>
+<style lang="scss">
+.opti-image-loaded + .spinner-wrapper {
+  display: none;
+}
+.card img {
+  transition: 0.8s ease-in-out all;
+  &:hover {
+    transform: scale(1.02);
   }
 }
 </style>
