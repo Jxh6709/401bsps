@@ -19,14 +19,15 @@
     <span v-if="date" class="date-wrapper">
       <strong>Published on:</strong> {{ datePretty }}
     </span>
+    {{tags}}
   </template>
    
     {{tags}}
-     <template v-slot:tags class="post-tags">
+     <!-- <template v-slot:tags class="post-tags">
    		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/">
    			<span>#</span> {{ tag }}
    		</nuxt-link>
-    </template>
+    </template> -->
   </generic-card>
 </template>
 
