@@ -9,25 +9,31 @@
         null
     "
   >
-  <template v-slot:default>
-     <span
-      v-if="author && $siteConfig.posts.displayAuthor"
-      class="author-wrapper"
-    >
-      <strong>Author:</strong> {{ author }} |
-    </span>
-    <span v-if="date" class="date-wrapper">
-      <strong>Published on:</strong> {{ datePretty }}
-    </span>
+    <template v-slot:default>
+      <h4
+        :class="{
+                subtitle: true,
+                'is-6': true,
+                'empty-content-placeholder': !$slots.default
+              }"
+      >
+        <span v-if="author && $siteConfig.posts.displayAuthor" class="author-wrapper">
+          <strong>Author:</strong>
+          {{ author }} |
+        </span>
+        <span v-if="date" class="date-wrapper">
+          <strong>Published on:</strong>
+          {{ datePretty }}
+        </span>
+      </h4>
+      {{tags}}
+    </template>
     {{tags}}
-  </template>
-   
-    {{tags}}
-     <!-- <template v-slot:tags class="post-tags">
+    <!-- <template v-slot:tags class="post-tags">
    		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/">
    			<span>#</span> {{ tag }}
    		</nuxt-link>
-    </template> -->
+    </template>-->
   </generic-card>
 </template>
 
@@ -60,9 +66,9 @@ export default {
     tags: {
       type: Array,
       default() {
-        return ["test tag"]
+        return ['test tag']
       }
-    },
+    }
   },
   computed: {
     datePretty() {
@@ -74,23 +80,23 @@ export default {
 
 <style lang="scss">
 .tags {
-    z-index: 1;
-    position: relative;
-    width: 2em;
-  }
+  z-index: 1;
+  position: relative;
+  width: 2em;
+}
 
 .post-tags {
   margin: 1em 0 0;
 
   &__link {
-  	margin-right: .7em;
-  	font-size: .8em;
-  	color: skyblue;
-  	text-decoration: none;
-  	background-color: red;
-  	color: black!important; //Todo: remove important;
-  	padding: .5em;
-  	border-radius: 10px;
+    margin-right: 0.7em;
+    font-size: 0.8em;
+    color: skyblue;
+    text-decoration: none;
+    background-color: red;
+    color: black !important; //Todo: remove important;
+    padding: 0.5em;
+    border-radius: 10px;
   }
 }
 </style>
