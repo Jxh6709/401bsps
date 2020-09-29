@@ -1,17 +1,18 @@
 ---
-title: WHAT COULD HAVE HAPPENED AT ZURICH BOG??
-subtitle: Zurich Bog
+featureImage: /uploads/post3.png
 trail:
   - Pocock Trail
-author: Steve Locke
-date: 2020-09-02T23:37:30.653Z
-featureImage: /uploads/post3.png
-video: /uploads/video.mp4
-tags:
-  - Pocock Trail
+title: WHAT COULD HAVE HAPPENED AT ZURICH BOG??
+subtitle: Zurich Bog
 category:
   - Zurich Bog
   - All categories
+author: Steve Locke
+date: 2020-09-02T23:37:30.653Z
+video: /uploads/video.mp4
+tags:
+  - Pocock Trail
+  - Tag 2
 ---
 This early spring, my wife and I took a once in a lifetime "bucket list" anniversary vacation. We love Niagara Falls. We have visited the falls with our children when they were pre-teens, teens and adults. We took my father-in-law to the falls when he was succumbing to Alzheimer's. We were blessed with his recollection of where he was and what we were visiting. Who can forget Niagara Falls? It is an international natural icon. Putting others before ourselves, we always visited the falls escorting "others" such as our children, relatives or friends. We never attended alone as a couple.
 
