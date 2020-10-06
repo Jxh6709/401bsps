@@ -1,7 +1,7 @@
 <template>
   <div id="category-page" class="page-wrapper category-page">
     <site-hero
-      :title="$store.state.name"
+      :title="tagname"
       :subtitle="$store.state.content"
       :image="$store.state.image"
     />
@@ -17,8 +17,7 @@
         <div class="panel">
           <nuxt-link
             v-for="cat in allCats"
-            :key="cat.slug"
-            :to="`/categories/${cat.slug}`"
+            :key="cat.slug" :to="`/categories/${cat.slug}`"
             :class="{
               'panel-block': true,
               'is-active': cat.slug === $route.params.single
@@ -39,12 +38,17 @@ export default {
       allCats: []
     }
   },
+  computed : {
+  	tagname : ()=>{
+  		return decodeURI(window.location.pathname).split("/tags/")[1]
+  	}
+  },
   fetch({ store, params }) {
     setPageData(store, { resource: 'category', slug: params.single })
   },
   async created() {
     this.allCats = await this.$cms.category.getAll()
-    console.log(this.$store)
+    console.log(this.$store);
   }
 }
 </script>
