@@ -28,7 +28,11 @@
       </h4>
       <div class="tags">
         <div v-for="tag in tags" :key="tag">
-           {{ tag }}
+           <nuxt-link 
+            :key="tag"
+            :to="`/tags/${tag}`">
+            {{ tag }}
+           </nuxt-link>
         </div>
 
       </div>
