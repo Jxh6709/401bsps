@@ -1,6 +1,9 @@
-Awake is a Nuxt.js template for generating a beautifully robust static site with blog. 
+This is a github source pages for Bergen Swamp Preservation Society
 
 # Features
+
+* The pages contains administrator website which in CMS/netlify folder.
+* Pages folder is contains the contents of websites. 
 
 * Simple modern design based on the Bulma css framework (with unused css purged via [purgecss](https://www.purgecss.com/))
 * Site search
@@ -12,10 +15,6 @@ Awake is a Nuxt.js template for generating a beautifully robust static site with
 * Isolated Netlify CMS driver (with more CMS drivers planned for future) for easily migrating between various headless cms'
 * Images automatically resized for various screens and given srcsets
 
-# Use Awake on Netlify
-Simply click the "Deploy to Netlify" button and then configure it to fit your needs as described below.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danielkellyio/awake-template)
 
 # Configuration
 
