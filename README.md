@@ -1,10 +1,10 @@
-This is a github source pages for Bergen Swamp Preservation Society
+# This is a github source pages for Bergen Swamp Preservation Society
 
 # Features
 
 * The pages contains administrator website which in CMS/netlify folder.
 * Pages folder is contains the contents of websites. 
-
+*
 * Simple modern design based on the Bulma css framework (with unused css purged via [purgecss](https://www.purgecss.com/))
 * Site search
 * Statically generated API for posts and categories
