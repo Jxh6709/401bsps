@@ -61,10 +61,16 @@
 	  }
 	}
 </script>
-<style lang="scss">	.tags {
+<style lang="scss">	
+	.tags {
 	  z-index: 1;
 	  position: relative;
-	  width: 2em;
+	}
+
+	.tags div {
+		padding: .3em;
+		border-radius: 10px;
+		background: lightgrey;
 	}
 	
 	.post-tags {
