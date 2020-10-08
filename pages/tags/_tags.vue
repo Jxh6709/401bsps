@@ -7,9 +7,7 @@
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
         {{taggedPosts}}
         <hr/><hr/>
-         <div v-for="item in taggedPosts" :key="item.title"> 
-          <post-card
-            :key="item.title"
+          <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
             :image="item.featureImage"
@@ -18,7 +16,6 @@
             :tags="item.tags"
             :trails="item.trails"
           />
-        </div>
       </template>
     </main-section>
   </div>
