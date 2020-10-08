@@ -6,22 +6,8 @@
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
         {{taggedPosts}}
-        <div v-for="item in allPosts" :key="item.title"> {{item}}
-          <post-card
-            v-if="item.trails && goodTrail(item)"
-            :key="item.title"
-            :title="item.title"
-            :link="item.slug ? `/${item.slug}` : ''"
-            :image="item.featureImage"
-            :author="item.author"
-            :date="item.date"
-            :tags="item.tags"
-            :trails="item.trails"
-          />
-        </div>
-
         <hr/><hr/>
-         <div v-for="item in taggedPosts" :key="item.title"> {{item}}
+         <div v-for="item in taggedPosts" :key="item.title"> 
           <post-card
             :key="item.title"
             :title="item.title"
@@ -39,6 +25,8 @@
 </template>
 <script>
 import { setPageData } from '../../helper'
+import {PostCard} from '../../components/cards/PostCard'
+
 export default {
   data() {
     return {
