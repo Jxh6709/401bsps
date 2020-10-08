@@ -1,20 +1,23 @@
- gcn<template>
+ <template>
   <div id="category-page" class="page-wrapper category-page">
     <site-hero :title="tagname" :subtitle="$store.state.content" :image="$store.state.image" />
     <main-section theme="sidebar-right">
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
-        {{taggedPosts}}
-        <post-card v-for="item in taggedPosts" :key="item.title"
-          :title="item.title"
-          :link="item.slug ? `/${item.slug}` : ''"
-          :image="item.featureImage"
-          :author="item.author"
-          :date="item.date"
-          :tags="item.tags"
-          :trails="item.trails"
-        />
+        <div v-for="item in allPosts" :key="item.title">
+          <post-card v-if="goodTrail(item)"
+            v-for="item in taggedPosts"
+            :key="item.title"
+            :title="item.title"
+            :link="item.slug ? `/${item.slug}` : ''"
+            :image="item.featureImage"
+            :author="item.author"
+            :date="item.date"
+            :tags="item.tags"
+            :trails="item.trails"
+          />
+        </div>
       </template>
     </main-section>
   </div>
@@ -54,6 +57,11 @@ export default {
     console.log(this.$store)
     console.log(await this.$cms.post.getAll())
     console.log(await this.$cms.trail.getAll())
+  },
+  methods: {
+    goodTrail(item) {
+      return item.trails.includes(this.tagname);
+    }
   }
 }
 </script>
