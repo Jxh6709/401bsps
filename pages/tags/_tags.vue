@@ -54,7 +54,7 @@ export default {
       let taggedObjs = []
       const len = this.allPosts.length
       for (let i = 0; i < len; i++) {
-        if (this.allPosts[i].trails.includes(this.tagname))
+        if (this.allPosts[i].trails && this.allPosts[i].trails.includes(this.tagname))
           taggedObjs.push(this.allPosts[i])
       }
       return taggedObjs
