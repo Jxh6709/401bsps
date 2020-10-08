@@ -5,7 +5,8 @@
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
-        <post-card v-for="item in taggedObjs" :key="item.title"
+        {{taggedPosts}}
+        <post-card v-for="item in taggedPosts" :key="item.title"
           :title="item.title"
           :link="item.slug ? `/${item.slug}` : ''"
           :image="item.featureImage"
