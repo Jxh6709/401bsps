@@ -6,10 +6,11 @@
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
         {{allPosts}}
+      
         {{taggedPosts}}
-        <div v-for="item in allPosts" :key="item.title">
+        <div v-for="item in allPosts" :key="item.title"> {{item}}
           <post-card
-            v-if="goodTrail(item)"
+            v-if="item.trails && goodTrail(item)"
             :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
@@ -19,7 +20,7 @@
             :tags="item.tags"
             :trails="item.trails"
           />
-        </div>
+        </>
       </template>
     </main-section>
   </div>
@@ -49,7 +50,7 @@ export default {
     this.allPosts = await this.$cms.post.getAll()
     console.log(this.$store)
     console.log(await this.$cms.post.getAll())
-    console.log(await this.$cms.trail.getAll())
+    // console.log(await this.$cms.trail.getAll())
   },
   methods: {
     goodTrail(item) {
