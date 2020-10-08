@@ -13,6 +13,7 @@
         :date="item.date"
         :tags="item.tags"
       />
+      {{item}}
       <div>
       </div>
     </template>
