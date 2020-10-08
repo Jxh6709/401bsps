@@ -46,17 +46,11 @@ export default {
     }
   },
   fetch({ store, params }) {
-    console.log('store')
-    console.log(store)
-    console.log('Params')
-    console.log(params)
     setPageData(store, { resource: 'category', slug: params.single })
   },
   async created() {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
-    console.log(this.$store)
-    console.log(await this.$cms.post.getAll())
     // console.log(await this.$cms.trail.getAll())
   },
   methods: {
