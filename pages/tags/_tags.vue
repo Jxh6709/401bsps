@@ -53,8 +53,8 @@ export default {
   async created() {
     this.allCats = await this.$cms.category.getAll()
     console.log(this.$store);
-    console.log(this.$cms.post.getAll())
-    console.log(this.$cms.trail.getAll())
+    console.log(await this.$cms.post.getAll())
+    console.log(await this.$cms.trail.getAll())
   }
 }
 </script>

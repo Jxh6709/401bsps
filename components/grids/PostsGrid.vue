@@ -14,7 +14,6 @@
         :tags="item.tags"
         :trails="item.trails"
       />
-      {{item}}
       <div>
       </div>
     </template>
