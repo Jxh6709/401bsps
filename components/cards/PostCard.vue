@@ -92,9 +92,20 @@ export default {
 }
 
 .tags div {
-  padding: 0.3em;
+  padding: 0.3em .5em;
   border-radius: 10px;
-  background: lightgrey;
+  background: #0084C0;
+  transition: .25s all;
+}
+
+.tags div:hover{
+  background: #00283a;
+  transition: .25s all;
+}
+
+.tags a{
+  color: white;
+  transition: .25s all;
 }
 
 .post-tags {
