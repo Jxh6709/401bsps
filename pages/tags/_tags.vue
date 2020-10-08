@@ -1,7 +1,7 @@
  <template>
   <div id="category-page" class="page-wrapper category-page">
     <site-hero :title="tagname" :subtitle="$store.state.content" :image="$store.state.image" />
-    <main-section theme="sidebar-right">
+    <main-section theme="one-column">
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
@@ -25,7 +25,7 @@
 </template>
 <script>
 import { setPageData } from '../../helper'
-import {PostCard} from '../../components/cards/PostCard'
+import PostCard from '../../components/cards/PostCard'
 
 export default {
   data() {
