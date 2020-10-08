@@ -5,9 +5,11 @@
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
+        {{allPosts}}
+        {{taggedPosts}}
         <div v-for="item in allPosts" :key="item.title">
-          <post-card v-if="goodTrail(item)"
-            v-for="item in taggedPosts"
+          <post-card
+            v-if="goodTrail(item)"
             :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
@@ -33,15 +35,6 @@ export default {
   computed: {
     tagname: () => {
       return decodeURI(window.location.pathname).split('/tags/')[1]
-    },
-    taggedPosts: () => {
-      let taggedObjs = []
-      const len = this.allPosts.length
-      for (i = 0; i < len; i++) {
-        if (this.allPosts[i].trails.includes(tagname))
-          taggedObjs.push(this.allPosts[i])
-      }
-      return taggedObjs
     }
   },
   fetch({ store, params }) {
@@ -60,7 +53,16 @@ export default {
   },
   methods: {
     goodTrail(item) {
-      return item.trails.includes(this.tagname);
+      return item.trails.includes(this.tagname)
+    },
+    taggedPosts() {
+      let taggedObjs = []
+      const len = this.allPosts.length
+      for (i = 0; i < len; i++) {
+        if (this.allPosts[i].trails.includes(tagname))
+          taggedObjs.push(this.allPosts[i])
+      }
+      return taggedObjs
     }
   }
 }
