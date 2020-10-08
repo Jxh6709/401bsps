@@ -30,7 +30,8 @@ import { setPageData } from '../../helper'
 export default {
   data() {
     return {
-      allCats: []
+      allCats: [],
+      allPosts: []
     }
   },
   computed: {
