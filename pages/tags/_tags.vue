@@ -25,6 +25,8 @@ import { setPageData } from '../../helper'
 import PostCard from '~/components/cards/PostCard'
 
 export default {
+  name: 'TagView',
+  components: { PostCard },
   data() {
     return {
       allCats: [],
