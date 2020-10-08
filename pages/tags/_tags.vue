@@ -21,7 +21,7 @@
         </div>
 
         <hr/><hr/>
-         <div v-for="item in allPosts" :key="item.title"> {{item}}
+         <div v-for="item in taggedPosts" :key="item.title"> {{item}}
           <post-card
             :key="item.title"
             :title="item.title"
@@ -54,7 +54,7 @@ export default {
       let taggedObjs = []
       const len = this.allPosts.length
       for (let i = 0; i < len; i++) {
-        if (this.allPosts[i].trails.includes(tagname))
+        if (this.allPosts[i].trails.includes(this.tagname))
           taggedObjs.push(this.allPosts[i])
       }
       return taggedObjs
