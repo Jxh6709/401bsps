@@ -11,7 +11,7 @@
 	<span v-if="author &amp;&amp; $siteConfig.posts.displayAuthor" class="author-wrapper"> <strong>Author:</strong> {{ author }} | </span> <span v-if="date" class="date-wrapper"> <strong>Published on:</strong> {{ datePretty }} </span> 
 </h4>
 <div class="tags">
-	<div v-for="tag in tags" :key="tag">
+	<div v-for="tag in trails" :key="tag">
 		<nuxt-link :key="tag" :to="`/tags/${tag}`"> {{ tag }} </nuxt-link> 
 	</div>
 </div>
@@ -52,7 +52,13 @@
 	      default() {
 	        return ['test tag']
 	      }
-	    }
+		},
+		trails: {
+			type: Array,
+			default() {
+				return []
+			}
+		}
 	  },
 	  computed: {
 	    datePretty() {

@@ -12,6 +12,7 @@
         :author="item.author"
         :date="item.date"
         :tags="item.tags"
+        :trails="item.trails"
       />
       {{item}}
       <div>
