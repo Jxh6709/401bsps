@@ -21,6 +21,7 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Properties", name: "category", widget: "relation", collection: "categories", searchFields: ["name"], valueField: "name", multiple: true}
+      - {label: "Trails", name: "trails", widget: "relation", collection: "trails", searchFields: ["name"], valueField: "name", multiple: true}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "featureImage", widget: "image"}
