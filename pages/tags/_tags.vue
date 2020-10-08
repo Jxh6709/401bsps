@@ -5,8 +5,6 @@
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
-        {{allPosts}}
-      
         {{taggedPosts}}
         <div v-for="item in allPosts" :key="item.title"> {{item}}
           <post-card
@@ -20,7 +18,21 @@
             :tags="item.tags"
             :trails="item.trails"
           />
-        </>
+        </div>
+
+        <hr/><hr/>
+         <div v-for="item in allPosts" :key="item.title"> {{item}}
+          <post-card
+            :key="item.title"
+            :title="item.title"
+            :link="item.slug ? `/${item.slug}` : ''"
+            :image="item.featureImage"
+            :author="item.author"
+            :date="item.date"
+            :tags="item.tags"
+            :trails="item.trails"
+          />
+        </div>
       </template>
     </main-section>
   </div>
@@ -37,6 +49,15 @@ export default {
   computed: {
     tagname: () => {
       return decodeURI(window.location.pathname).split('/tags/')[1]
+    },
+    taggedPosts() {
+      let taggedObjs = []
+      const len = this.allPosts.length
+      for (i = 0; i < len; i++) {
+        if (this.allPosts[i].trails.includes(tagname))
+          taggedObjs.push(this.allPosts[i])
+      }
+      return taggedObjs
     }
   },
   fetch({ store, params }) {
@@ -56,15 +77,6 @@ export default {
   methods: {
     goodTrail(item) {
       return item.trails.includes(this.tagname)
-    },
-    taggedPosts() {
-      let taggedObjs = []
-      const len = this.allPosts.length
-      for (i = 0; i < len; i++) {
-        if (this.allPosts[i].trails.includes(tagname))
-          taggedObjs.push(this.allPosts[i])
-      }
-      return taggedObjs
     }
   }
 }
