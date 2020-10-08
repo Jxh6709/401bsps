@@ -4,7 +4,7 @@
     <main-section theme="one-column">
       <template v-slot:default>
         <!-- Posts in Category -->
-        <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
+        <posts-grid :per-row="2" />
         {{taggedPosts}}
         <hr/><hr/>
           <post-card v-for="item in taggedPosts" :key="item.title"
