@@ -54,12 +54,10 @@ export default {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
     let trails = await this.$cms.trail.getAll()
-    for (const t in trails) {
-      if (t.name === this.tagname) {
-        this.currentTrail = t;
-      }
-    }
-    console.log(await this.$cms.trail.getAll())
+    this.currentTrail = trails.find(trail => trail.name === this.tagname)
+    console.log(trails)
+    console.log(this.currentTrail)
+    console.log(this.tagname)
   },
   methods: {
     goodTrail(item) {
