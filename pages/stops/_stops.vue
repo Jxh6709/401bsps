@@ -14,6 +14,7 @@
             :date="item.date"
             :tags="item.tags"
             :trails="item.trails"
+            :stops="item.stops"
           />
       </template>
     </main-section>
@@ -35,13 +36,13 @@ export default {
   },
   computed: {
     tagname: () => {
-      return decodeURI(window.location.pathname).split('/tags/')[1]
+      return decodeURI(window.location.pathname).split('/stops/')[1]
     },
     taggedPosts() {
       let taggedObjs = []
       const len = this.allPosts.length
       for (let i = 0; i < len; i++) {
-        if (this.allPosts[i].trails && this.allPosts[i].trails.includes(this.tagname))
+        if (this.allPosts[i].stops && this.allPosts[i].stops.includes(this.tagname))
           taggedObjs.push(this.allPosts[i])
       }
       return taggedObjs
