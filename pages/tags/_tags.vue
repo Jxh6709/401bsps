@@ -3,6 +3,7 @@
     <site-hero :title="tagname" :subtitle="currentTrail.description" :image="currentTrail.image" />
     <main-section theme="one-column">
       <template v-slot:default>
+        {{currentTrail}}
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
           <post-card v-for="item in taggedPosts" :key="item.title"
