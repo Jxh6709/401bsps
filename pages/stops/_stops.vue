@@ -1,9 +1,9 @@
  <template>
   <div id="category-page" class="page-wrapper category-page">
-    <site-hero :title="tagname" :subtitle="currentTrail.description" :image="currentTrail.image" />
+    <site-hero :title="tagname" :subtitle="currentStop.description" :image="currentStop.image" />
     <main-section theme="one-column">
       <template v-slot:default>
-        {{currentTrail}}
+        {{currentStop}}
         <!-- Posts in Category -->
         <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
           <post-card v-for="item in taggedPosts" :key="item.title"
@@ -30,7 +30,7 @@ export default {
     return {
       allCats: [],
       allPosts: [],
-      currentTrail: {}
+      currentStop: {}
     }
   },
   computed: {
@@ -53,13 +53,9 @@ export default {
   async created() {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
-    let trails = await this.$cms.trail.getAll()
-    this.currentTrail = trails.find(trail => trail.name === this.tagname)
-  },
-  methods: {
-    goodTrail(item) {
-      return item.trails.includes(this.tagname)
-    }
+    let stops = await this.$cms.stop.getAll()
+    console.log(stops)
+    this.currentStop = stops.find(stop => stop.name === this.tagname)
   }
 }
 </script>
