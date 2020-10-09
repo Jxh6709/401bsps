@@ -55,7 +55,7 @@ collections:
       - {label: "Description", name: "description", widget: "markdown"}
     
   - name: "stops"
-    label: "stops"
+    label: "Stops"
     folder: "content/stops"
     create: true
     slug: "{{slug}}"
