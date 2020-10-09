@@ -51,7 +51,8 @@ export default {
   async created() {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
-    // console.log(await this.$cms.trail.getAll())
+    console.log(await this.$cms.trail.getAll())
+    console.log(await this.$cms.trails.getAll())
   },
   methods: {
     goodTrail(item) {
