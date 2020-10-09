@@ -53,7 +53,7 @@ export default {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
     let trails = await this.$cms.trail.getAll()
-    for (t in trails) {
+    for (const t in trails) {
       if (t.name === this.tagname) {
         this.currentTrail = t;
       }
