@@ -14,6 +14,7 @@
             :date="item.date"
             :tags="item.tags"
             :trails="item.trails"
+            :stops="item.stops"
           />
       </template>
     </main-section>
@@ -35,7 +36,7 @@ export default {
   },
   computed: {
     tagname: () => {
-      return decodeURI(window.location.pathname).split('/tags/')[1]
+      return decodeURI(window.location.pathname).split('/trails/')[1]
     },
     taggedPosts() {
       let taggedObjs = []
