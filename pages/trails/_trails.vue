@@ -3,13 +3,12 @@
     <site-hero :title="tagname" :subtitle="currentTrail.description" :image="currentTrail.image" />
     <main-section theme="one-column">
       <template v-slot:default>
-        <!-- {{currentTrail}} -->
-        {{category}}
+        {{currentTrail}}
         <!-- Posts in Category -->
-        <posts-grid  :category="[taggedObjs]" :per-row="3" />
+        <!-- <posts-grid :per-row="2" /> -->
         {{taggedPosts}}
-        <hr/>
-          <!-- <post-card v-for="item in taggedPosts" :key="item.title"
+        <hr/><hr/>
+          <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
             :image="item.featureImage"
@@ -18,7 +17,7 @@
             :tags="item.tags"
             :trails="item.trails"
             :stops="item.stops"
-          /> -->
+          />
       </template>
     </main-section>
   </div>
