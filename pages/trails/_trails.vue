@@ -17,7 +17,9 @@
             :tags="item.tags"
             :trails="item.trails"
             :stops="item.stops"
-          />
+          >
+          <div></div>
+          </post-card>
       </template>
     </main-section>
   </div>
