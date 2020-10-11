@@ -98,6 +98,8 @@ export default {
 #category-page .column{display: flex; flex-wrap: wrap;}
 #category-page .card{width: 32%; display: block; margin: .5rem;}
 
+@media screen and (max-width: 768px){#category-page .card{width: 100%;}}
+
 .tags {
   z-index: 1;
   position: relative;
