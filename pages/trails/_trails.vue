@@ -7,7 +7,7 @@
         <!-- Posts in Category -->
         <!-- <posts-grid :per-row="2" /> -->
         {{taggedPosts}}
-        <hr/><hr/>
+        <hr/><hr/><hr/>
           <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
