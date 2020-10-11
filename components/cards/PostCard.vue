@@ -1,4 +1,5 @@
 <template>
+  <div class="testNew">
   <generic-card
     :title="title"
     :image="image"
@@ -36,6 +37,8 @@
       </div>
     </template>
   </generic-card>
+  </div>
+
 </template> 
 <!-- <template v-slot:tags class="post-tags">
    		<nuxt-link class="post-tags__link" v-for="tag in tags" :key="tag" :to="/">
