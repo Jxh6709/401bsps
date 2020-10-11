@@ -95,6 +95,9 @@ export default {
 }
 </script>
 <style lang="scss">
+#category-page .column{display: flex; flex-wrap: wrap;}
+#category-page .card{width: 33.3333%; display: block; margin: .75rem;}
+
 .tags {
   z-index: 1;
   position: relative;
