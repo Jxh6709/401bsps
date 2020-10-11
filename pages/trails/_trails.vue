@@ -8,6 +8,7 @@
         <!-- <posts-grid :per-row="2" /> -->
         {{taggedPosts}}
         <hr/><hr/>
+        <div class="encapsulatingDiv">
           <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
@@ -20,6 +21,7 @@
           >
           <div class="testDiv"></div>
           </post-card>
+          </div>
       </template>
     </main-section>
   </div>
