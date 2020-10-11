@@ -6,7 +6,7 @@
         <!-- {{currentTrail}} -->
         {{category}}
         <!-- Posts in Category -->
-        <posts-grid  :category="[$taggedPosts]" :per-row="3" />
+        <posts-grid  :category="[taggedObjs]" :per-row="3" />
         {{taggedPosts}}
         <hr/>
           <!-- <post-card v-for="item in taggedPosts" :key="item.title"
