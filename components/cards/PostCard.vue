@@ -106,7 +106,7 @@ export default {
 .tags div {
   padding: 0.3em .5em;
   border-radius: 10px;
-  background: green;
+  background: #0084C0;
   transition: .25s all;
   margin: 5px;
 }
