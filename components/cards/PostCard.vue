@@ -105,6 +105,7 @@ export default {
   border-radius: 10px;
   background: #0084C0;
   transition: .25s all;
+  margin: 5px;
 }
 
 .tags div:hover{
