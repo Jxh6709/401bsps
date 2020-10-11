@@ -5,7 +5,7 @@
       <template v-slot:default>
         {{currentTrail}}
         <!-- Posts in Category -->
-        <posts-grid :per-row="2" />
+        <!-- <posts-grid :per-row="2" /> -->
         {{taggedPosts}}
         <hr/><hr/>
           <post-card v-for="item in taggedPosts" :key="item.title"
