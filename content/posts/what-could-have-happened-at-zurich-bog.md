@@ -9,6 +9,8 @@ category:
   - All categories
 trails:
   - Pocock Trail
+stops:
+  - Stop 1
 author: Steve Locke
 date: 2020-09-02T23:37:30.653Z
 video: /uploads/video.mp4

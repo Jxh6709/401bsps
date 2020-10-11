@@ -13,6 +13,7 @@
         :date="item.date"
         :tags="item.tags"
         :trails="item.trails"
+        :stops="item.stops"
       />
       <div>
       </div>

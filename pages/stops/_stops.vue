@@ -1,12 +1,11 @@
  <template>
   <div id="category-page" class="page-wrapper category-page">
-    <site-hero :title="tagname" :subtitle="$store.state.content" :image="$store.state.image" />
+    <site-hero :title="tagname" :subtitle="currentStop.description" :image="currentStop.image" />
     <main-section theme="one-column">
       <template v-slot:default>
+        {{currentStop}}
         <!-- Posts in Category -->
-        <posts-grid :per-row="2" />
-        {{taggedPosts}}
-        <hr/><hr/>
+        <!-- <posts-grid :category="[$store.state.name]" :per-row="2" /> -->
           <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
@@ -15,6 +14,7 @@
             :date="item.date"
             :tags="item.tags"
             :trails="item.trails"
+            :stops="item.stops"
           />
       </template>
     </main-section>
@@ -30,41 +30,33 @@ export default {
   data() {
     return {
       allCats: [],
-      allPosts: []
+      allPosts: [],
+      currentStop: {}
     }
   },
   computed: {
     tagname: () => {
-      return decodeURI(window.location.pathname).split('/tags/')[1]
+      return decodeURI(window.location.pathname).split('/stops/')[1]
     },
     taggedPosts() {
       let taggedObjs = []
       const len = this.allPosts.length
       for (let i = 0; i < len; i++) {
-        if (this.allPosts[i].trails && this.allPosts[i].trails.includes(this.tagname))
+        if (this.allPosts[i].stops && this.allPosts[i].stops.includes(this.tagname))
           taggedObjs.push(this.allPosts[i])
       }
       return taggedObjs
     }
   },
   fetch({ store, params }) {
-    console.log('store')
-    console.log(store)
-    console.log('Params')
-    console.log(params)
     setPageData(store, { resource: 'category', slug: params.single })
   },
   async created() {
     this.allCats = await this.$cms.category.getAll()
     this.allPosts = await this.$cms.post.getAll()
-    console.log(this.$store)
-    console.log(await this.$cms.post.getAll())
-    // console.log(await this.$cms.trail.getAll())
-  },
-  methods: {
-    goodTrail(item) {
-      return item.trails.includes(this.tagname)
-    }
+    let stops = await this.$cms.stop.getAll()
+    console.log(stops)
+    this.currentStop = stops.find(stop => stop.name === this.tagname)
   }
 }
 </script>

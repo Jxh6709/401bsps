@@ -28,7 +28,10 @@
       </h4>
       <div class="tags">
         <div v-for="tag in trails" :key="tag">
-          <nuxt-link :key="tag" :to="`/tags/${tag}`">{{ tag }}</nuxt-link>
+          <nuxt-link :key="tag" :to="`/trails/${tag}`">{{ tag }}</nuxt-link>
+        </div>
+        <div v-for="tag in stops" :key="tag">
+          <nuxt-link :key="tag" :to="`/stops/${tag}`">{{ tag }}</nuxt-link>
         </div>
       </div>
     </template>
@@ -72,6 +75,12 @@ export default {
       }
     },
     trails: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    stops: {
       type: Array,
       default() {
         return []
