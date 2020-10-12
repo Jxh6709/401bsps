@@ -1,8 +1,10 @@
 # This is a github source pages for Bergen Swamp Preservation Society
 
-1. 3D vedio
-2. Map
-3. QR code
+
+*We have created some features for the Bergen Swamp Preservation Society.
+    1. 3D video - provided a better view of our members.
+    2. Map - a map that contains all the stops form trails
+    3. QR code - able to scan the QR code to get more details of the stop
 
 
 # Features
