@@ -98,7 +98,7 @@ export default {
 #category-page .column, #stops-page .column{display: flex; flex-wrap: wrap; justify-content: space-between;}
 #category-page .card{display: block; margin: .5rem 0; flex: 0 1 calc(33% - .3rem);}
 #stops-page .card{margin: .5rem 0; flex: 0 1 calc(50% - .5rem); display: block;}
-#stops-page .panelStops{justify-content: flex-start;}
+#category-page .sidebarInfo, #stops-page .sidebarInfo{justify-content: flex-start;}
 
 @media screen and (max-width: 768px){#category-page .card, #stops-page .card{flex-basis: 100%;}}
 

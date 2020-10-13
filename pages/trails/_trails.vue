@@ -110,5 +110,5 @@ export default {
 }
 </script>
 <style>
-  .panelStops{flex-direction: column;}
+  .sidebarInfo{flex-direction: column;}
 </style>
