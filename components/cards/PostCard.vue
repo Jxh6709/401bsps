@@ -95,16 +95,13 @@ export default {
 }
 </script>
 <style lang="scss">
-#category-page .column{display: flex; flex-wrap: wrap;}
-#category-page .card{width: 32%; display: block; margin: .5rem;}
+#category-page .column, #stops-page .column{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#category-page .card{display: block; margin: .5rem 0; flex: 0 1 calc(33% - .3rem);}
+#stops-page .card{margin: .5rem 0; flex: 0 1 calc(33% - .3rem); display: block;}
+#stops-page .panelStops{justify-content: flex-start;}
 
-@media screen and (max-width: 768px){#category-page .card{width: 100%;}}
+@media screen and (max-width: 768px){#category-page .card, #stops-page .card{flex-basis: 100%;}}
 
-#stops-page .column{display: flex; flex-wrap: wrap;}
-#stops-page .card{width: 47%; display: block; margin: .5rem;}
-
-@media screen and (max-width: 1215px){#stops-page .card{width: 46%;}}
-@media screen and (max-width: 768px){#stops-page .card{width: 100%;}}
 
 .tags {
   z-index: 1;
