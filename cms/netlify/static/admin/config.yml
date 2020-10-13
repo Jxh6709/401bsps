@@ -51,6 +51,7 @@ collections:
     identifier_field: name
     fields:
       - {label: "Name", name: "name", widget: "string"}
+      - {label: "Properties", name: "property", widget: "relation", collection: "categories", searchFields: ["name"], valueField: "name", multiple: true}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
     

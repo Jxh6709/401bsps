@@ -19,7 +19,7 @@
         />
       </template>
       <template v-slot:sidebar>
-        <h3 class="subtitle">All Stops On This Trail</h3>
+        <h3 class="subtitle">All Stops On The {{currentStop.trails[0]}}</h3>
         <div class="panel">
           <nuxt-link
             v-for="stop in stopsOnTrail"

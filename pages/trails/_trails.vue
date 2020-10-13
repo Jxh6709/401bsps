@@ -1,12 +1,11 @@
  <template>
   <div id="category-page" class="page-wrapper category-page">
     <site-hero :title="tagname" :subtitle="currentTrail.description" :image="currentTrail.image" />
-    <main-section theme="one-column">
+    <main-section theme="sidebar-right">
       <template v-slot:default>
         <!-- Posts in Category -->
         <!-- <posts-grid :per-row="2" /> -->
         <!-- {{taggedPosts}} -->
-        <hr/><hr/>
           <post-card v-for="item in taggedPosts" :key="item.title"
             :title="item.title"
             :link="item.slug ? `/${item.slug}` : ''"
@@ -18,6 +17,20 @@
             :stops="item.stops"
           >
           </post-card>
+      </template>
+      <template v-slot:sidebar>
+        <h3 class="subtitle">All Trails On  {{currentTrail.property[0]}}</h3>
+        <div class="panel">
+          <nuxt-link
+            v-for="trail in trailsOnProperty"
+            :key="trail.name"
+            :to="`/trails/${trail.name}`"
+            :class="{
+              'panel-block': true,
+              'is-active': currentTrail.name === tagname
+            }"
+          >{{ trail.name }}</nuxt-link>
+        </div>
       </template>
     </main-section>
   </div>
@@ -33,6 +46,7 @@ export default {
     return {
       allCats: [],
       allPosts: [],
+      trailsOnProperty: [],
       currentTrail: {}
     }
   },
@@ -58,11 +72,43 @@ export default {
     this.allPosts = await this.$cms.post.getAll()
     let trails = await this.$cms.trail.getAll()
     this.currentTrail = trails.find(trail => trail.name === this.tagname)
+    this.trailsOnProperty = trails.filter((trail) => this.findCommonElements2(trail.property,this.currentTrail.property) ) 
+    console.log(this.currentTrail)
+    console.log(this.trailsOnProperty)
   },
   methods: {
     goodTrail(item) {
       return item.trails.includes(this.tagname)
+    },
+    findCommonElements2(arr1, arr2) {
+      // https://www.geeksforgeeks.org/how-to-find-if-two-arrays-contain-any-common-item-in-javascript/#:~:text=Check%20if%20the%20elements%20from,return%20true%20else%20return%20false.
+      // Create an empty object
+      let obj = {}
+      // Loop through the first array
+      for (let i = 0; i < arr1.length; i++) {
+        // Check if element from first array
+        // already exist in object or not
+        if (!obj[arr1[i]]) {
+          // If it doesn't exist assign the
+          // properties equals to the
+          // elements in the array
+          const element = arr1[i]
+          obj[element] = true
+        }
+      }
+      // Loop through the second array
+      for (let j = 0; j < arr2.length; j++) {
+        // Check elements from second array exist
+        // in the created object or not
+        if (obj[arr2[j]]) {
+          return true
+        }
+      }
+      return false
     }
   }
 }
 </script>
+<style>
+  .panelStops{flex-direction: column;}
+</style>
