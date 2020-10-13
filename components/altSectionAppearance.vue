@@ -22,7 +22,7 @@
         </div>
         <aside
           v-if="computedTheme === 'sidebar-right'"
-          class="column right-sidebar is-one-quarter"
+          class="column right-sidebar is-one-quarter panelStops"
         >
           <slot name="sidebar"></slot>
         </aside>
