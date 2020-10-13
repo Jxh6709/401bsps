@@ -1,5 +1,5 @@
  <template>
-  <div id="category-page" class="page-wrapper category-page">
+  <div id="trails-page" class="page-wrapper category-page">
     <site-hero :title="tagname" :subtitle="currentTrail.description" :image="currentTrail.image" />
     <main-section theme="sidebar-right">
       <template v-slot:default>

@@ -95,13 +95,13 @@ export default {
 }
 </script>
 <style lang="scss">
-#category-page .column, #stops-page .column{display: flex; flex-wrap: wrap; justify-content: space-between;}
-#category-page .card{display: block; margin: .5rem 0; flex: 0 1 calc(33% - .3rem);}
+#trails-page .column, #stops-page .column{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#trails-page .card{display: block; margin: .5rem 0; flex: 0 1 calc(33% - .3rem);}
 #stops-page .card{margin: .5rem 0; flex: 0 1 calc(50% - .5rem); display: block;}
-#category-page .sidebarInfo, #stops-page .sidebarInfo{justify-content: flex-start;}
+#trails-page .sidebarInfo, #stops-page .sidebarInfo{justify-content: flex-start;}
 
-@media screen and (max-width: 1215px){#category-page .card{flex-basis: calc(50% - .5rem);}
-@media screen and (max-width: 768px){#category-page .card, #stops-page .card{flex-basis: 100%;}}
+@media screen and (max-width: 1215px){#trails-page .card{flex-basis: calc(50% - .5rem);}
+@media screen and (max-width: 768px){#trails-page .card, #stops-page .card{flex-basis: 100%;}}
 
 
 .tags {
