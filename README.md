@@ -1,4 +1,4 @@
-# This is a github source pages for Bergen Swamp Preservation Society
+# This is the Bergen Swamp Preservation Society
 
 
 * We have created some features for the Bergen Swamp Preservation Society.
