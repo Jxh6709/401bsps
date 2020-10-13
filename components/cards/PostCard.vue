@@ -100,6 +100,7 @@ export default {
 #stops-page .card{margin: .5rem 0; flex: 0 1 calc(50% - .5rem); display: block;}
 #category-page .sidebarInfo, #stops-page .sidebarInfo{justify-content: flex-start;}
 
+@media screen and (max-width: 1215px){#category-page .card{flex-basis: calc(50% - .5rem);}
 @media screen and (max-width: 768px){#category-page .card, #stops-page .card{flex-basis: 100%;}}
 
 
