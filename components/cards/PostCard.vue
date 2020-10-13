@@ -100,6 +100,11 @@ export default {
 
 @media screen and (max-width: 768px){#category-page .card{width: 100%;}}
 
+#stops-page .column{display: flex; flex-wrap: wrap;}
+#stops-page .card{width: 48%; display: block; margin: .5rem;}
+
+@media screen and (max-width: 768px){#stops-page .card{width: 100%;}}
+
 .tags {
   z-index: 1;
   position: relative;

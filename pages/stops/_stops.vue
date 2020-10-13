@@ -1,5 +1,5 @@
  <template>
-  <div id="category-page" class="page-wrapper category-page">
+  <div id="stops-page" class="page-wrapper category-page">
     <site-hero :title="tagname" :subtitle="currentStop.description" :image="currentStop.image" />
     <main-section theme="sidebar-right">
       <template v-slot:default>
@@ -18,7 +18,7 @@
           :stops="item.stops"
         />
       </template>
-      <template v-slot:sidebar>
+      <template v-slot:sidebar class="panelStops">
         <h3 class="subtitle">All Stops On This Trail</h3>
         <div class="panel">
           <nuxt-link
@@ -108,3 +108,7 @@ export default {
   }
 }
 </script>
+
+<style>
+  #panelStops{flex-direction: column;}
+</style>
