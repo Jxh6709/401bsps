@@ -101,7 +101,7 @@ export default {
 #trails-page .sidebarInfo, #stops-page .sidebarInfo{justify-content: flex-start;}
 
 
-@media screen and (max-width: 1215px){#trails-page .card{flex-basis: calc(50% - .5rem);}
+@media screen and (max-width: 1215px){#trails-page .card{flex-basis: calc(50% - .5rem);}}
 @media screen and (max-width: 768px){#trails-page .card, #stops-page .card{flex-basis: 100%;}}
 
 
