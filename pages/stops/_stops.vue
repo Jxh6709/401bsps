@@ -18,7 +18,7 @@
           :stops="item.stops"
         />
       </template>
-      <template v-slot:sidebar class="panelStops">
+      <template v-slot:sidebar v-bind:class="{panelStops}">
         <h3 class="subtitle">All Stops On This Trail</h3>
         <div class="panel">
           <nuxt-link
