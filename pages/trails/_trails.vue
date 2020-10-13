@@ -19,7 +19,7 @@
           </post-card>
       </template>
       <template v-slot:sidebar>
-        <h3 class="subtitle">All Stops On The {{currentTrail.trails[0]}}</h3>
+        <h3 class="subtitle">All Trails On  {{currentTrail.property[0]}}</h3>
         <div class="panel">
           <nuxt-link
             v-for="trail in trailsOnProperty"
@@ -73,6 +73,8 @@ export default {
     let trails = await this.$cms.trail.getAll()
     this.currentTrail = trails.find(trail => trail.name === this.tagname)
     this.trailsOnProperty = trails.filter((trail) => this.findCommonElements2(trail.property,this.currentTrail.property) ) 
+    console.log(this.currentTrail)
+    console.log(this.trailsOnProperty)
   },
   methods: {
     goodTrail(item) {
