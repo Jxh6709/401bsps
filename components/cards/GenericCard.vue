@@ -23,7 +23,6 @@
               :class="
                 `title
                 is-5
-                has-text-weight-light
                 ${title ? '' : 'empty-content-placeholder'}`
               "
             >
