@@ -13,7 +13,7 @@
           :alt="$siteConfig.siteName"
           class="logo"
         />
-        <span style="margin-left:5px;">Bergen Swamp Preservation Society</span>
+        <span class="whiteTxt" style="margin-left:5px;">Bergen Swamp Preservation Society</span>
       </nuxt-link>
       <hamburger-button @click="active = !active" />
     </div>
@@ -28,7 +28,7 @@
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item"
+          class="navbar-item whiteTxt"
           @click="active = false"
         >
           <component
@@ -40,7 +40,7 @@
             {{ item.name }}
           </component>
         </li>
-        <li class="navbar-item site-search-wrapper">
+        <li class="whiteTxt navbar-item site-search-wrapper">
           <site-search />
         </li>
       </ul>
@@ -76,5 +76,11 @@ export default {
 
 .navbar-menu a {
   display: block;
+}
+.navbar {
+  background: #00283A;
+}
+.whiteTxt {
+  color: white;
 }
 </style>

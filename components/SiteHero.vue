@@ -60,6 +60,7 @@ export default {
   text-align: center;
   overflow: hidden;
   position: relative;
+  background: #00283A;
 }
 
 .title {
