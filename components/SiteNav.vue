@@ -28,7 +28,7 @@
         <li
           v-for="item in $siteConfig.mainMenu"
           :key="item.link"
-          class="navbar-item whiteTxt"
+          class="navbar-item"
           @click="active = false"
         >
           <component
@@ -36,6 +36,7 @@
             :href="item.link"
             :to="item.link"
             :target="item.target ? item.target : '_self'"
+            class="whiteTxt"
           >
             {{ item.name }}
           </component>
