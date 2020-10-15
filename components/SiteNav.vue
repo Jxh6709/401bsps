@@ -81,6 +81,9 @@ export default {
 .navbar {
   background: #00283A;
 }
+.navbar-menu {
+  background: #00283A;
+}
 .whiteTxt {
   color: white;
 }
