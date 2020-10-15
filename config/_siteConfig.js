@@ -29,6 +29,10 @@ export default {
     {
       name: 'Properties',
       link: '/categories'
+    },
+    {
+      name: 'Request A Tour',
+      link: 'https://bergenswamp.org/visitor_request.html'
     }
   ],
   hero: {
