@@ -4,5 +4,5 @@ property:
   - Zurich Bog
   - Bergen Swamp
 image: /uploads/c8.png
-description: Hola
+description: Welcome to the second trail
 ---
