@@ -94,10 +94,17 @@ export default {
 }
 </style>
 <style lang="scss">
+.card {
+  width: 442px;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
 .opti-image-loaded + .spinner-wrapper {
   display: none;
 }
 .card img {
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
   transition: 0.8s ease-in-out all;
   &:hover {
     transform: scale(1.02);

@@ -5,10 +5,10 @@
         v-if="author && $siteConfig.posts.displayAuthor"
         class="author-wrapper"
       >
-        <strong>Author:</strong> {{ author }}
+         {{ author }} |
       </span>
       <span v-if="date" class="date-wrapper">
-        <strong>Published on:</strong> {{ date }}
+         {{ date }}
       </span>
     </site-hero>
     <main-section :one-column-constrained="true">

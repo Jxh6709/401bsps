@@ -18,11 +18,9 @@
               }"
       >
         <span v-if="author &amp;&amp; $siteConfig.posts.displayAuthor" class="author-wrapper">
-          <strong>Author:</strong>
           {{ author }} |
         </span>
         <span v-if="date" class="date-wrapper">
-          <strong>Published on:</strong>
           {{ datePretty }}
         </span>
       </h4>
@@ -111,20 +109,20 @@ export default {
 }
 
 .tags div {
-  padding: 0.3em .5em;
-  border-radius: 10px;
-  background: #0084C0;
+  border: 0.5px solid #000000;
+  padding: 0.3em .7em;
+  border-radius: 32px;
   transition: .25s all;
   margin: 5px;
 }
 
 .tags div:hover{
-  background: #00283a;
+  background: #ebeced;
   transition: .25s all;
 }
 
 .tags a{
-  color: white;
+  color: black;
   transition: .25s all;
 }
 
