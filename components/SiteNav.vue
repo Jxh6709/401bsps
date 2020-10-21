@@ -78,11 +78,36 @@ export default {
 .navbar-menu a {
   display: block;
 }
+
+.navbar-menu a:hover, 
+.navbar-menu a:focus, 
+{
+  color: #6FCF97;
+}
+
+.navbar-menu a:after {
+  content: '';
+  display: none;
+  color: #6FCF97;
+  padding: 5px;
+  border-bottom: 3px solid #6FCF97;
+  width: 0;
+  position: absolute;
+  right: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.navbar-menu a:focus:after { 
+  display: block;
+  width: 100%; 
+}
+
 .navbar {
-  background: #00283A;
+  background: #0B2838;
 }
 .navbar-menu {
-  background: #00283A;
+  background: #0B2838;
 }
 .whiteTxt {
   color: white;

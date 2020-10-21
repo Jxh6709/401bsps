@@ -156,6 +156,7 @@ export default {
     input {
       opacity: 1;
       width: 200px;
+      border: 2px solid #6FCF97;
     }
   }
 }
