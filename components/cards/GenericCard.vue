@@ -1,23 +1,23 @@
 <template>
   <div class="card">
+    <div class="card-image">
+      <component :is="link ? 'nuxt-link' : 'span'" :to="link">
+        <figure :class="`image is-${imageRatioClass}`">
+          <opti-image
+            v-if="image"
+            :src="responsiveImage.src"
+            :srcset="responsiveImage.srcSet"
+            :width="imageRatio[0]"
+            :height="imageRatio[1]"
+            :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
+          />
+          <loading-spinner position="absolute" />
+        </figure>
+      </component>
+    </div>
     <div class="card-content">
       <div class="media">
         <div class="media-content">
-           <div class="card-image">
-            <component :is="link ? 'nuxt-link' : 'span'" :to="link">
-              <figure :class="`image is-${imageRatioClass}`">
-                <opti-image
-                  v-if="image"
-                  :src="responsiveImage.src"
-                  :srcset="responsiveImage.srcSet"
-                  :width="imageRatio[0]"
-                  :height="imageRatio[1]"
-                  :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
-                />
-                <loading-spinner position="absolute" />
-              </figure>
-            </component>
-          </div>
           <nuxt-link :to="link">
             <h3
               :class="
@@ -113,6 +113,6 @@ export default {
 }
 .card img {
   border-radius: 24px;
-  padding: 15px 15px 15px 15px;
+  padding: 5px 5px 5px 5px;
 }
 </style>
