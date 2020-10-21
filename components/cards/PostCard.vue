@@ -106,6 +106,7 @@ export default {
 .tags {
   z-index: 1;
   position: relative;
+  margin-left: -0.5rem;
 }
 
 .tags div {
@@ -118,7 +119,7 @@ export default {
 
 .tags div:hover{
   background: #ebeced;
-  transition: .25s all;
+  transition: .5s all;
 }
 
 .tags a{

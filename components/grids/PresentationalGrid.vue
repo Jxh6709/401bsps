@@ -66,7 +66,7 @@ export default {
     height: 100%;
   }
   .media-content {
-    overflow-x: initial;
+    overflow-x: visible;
   }
 }
 </style>
@@ -76,7 +76,7 @@ export default {
 }
 .grid-theme-grid .items,
 .grid-theme-image-grid .items {
-  padding: 0.75rem;
+  padding: 0.3rem;
   .column {
     padding: 0;
   }
@@ -93,7 +93,6 @@ export default {
     color: white;
     opacity: 0;
     transition: 0.4s ease all;
-    width: 442px;
     border-radius: 24px;
   }
   .card-content div,

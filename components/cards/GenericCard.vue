@@ -1,23 +1,23 @@
 <template>
   <div class="card">
-    <div class="card-image">
-      <component :is="link ? 'nuxt-link' : 'span'" :to="link">
-        <figure :class="`image is-${imageRatioClass}`">
-          <opti-image
-            v-if="image"
-            :src="responsiveImage.src"
-            :srcset="responsiveImage.srcSet"
-            :width="imageRatio[0]"
-            :height="imageRatio[1]"
-            :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
-          />
-          <loading-spinner position="absolute" />
-        </figure>
-      </component>
-    </div>
     <div class="card-content">
       <div class="media">
         <div class="media-content">
+           <div class="card-image">
+            <component :is="link ? 'nuxt-link' : 'span'" :to="link">
+              <figure :class="`image is-${imageRatioClass}`">
+                <opti-image
+                  v-if="image"
+                  :src="responsiveImage.src"
+                  :srcset="responsiveImage.srcSet"
+                  :width="imageRatio[0]"
+                  :height="imageRatio[1]"
+                  :sizes="`(min-width: 768px) ${100 / $siteConfig.posts.perRow}vw`"
+                />
+                <loading-spinner position="absolute" />
+              </figure>
+            </component>
+          </div>
           <nuxt-link :to="link">
             <h3
               :class="
@@ -28,6 +28,14 @@
             >
               {{ title }}
             </h3>
+            <p
+            :class="
+                `descrip
+                is- ${desc ? '' : 'empty-content-placeholder'}`
+              "
+            >
+              {{ desc }}
+            </p>
             <slot></slot>
           </nuxt-link>
           <slot name="tags"></slot>
@@ -41,6 +49,7 @@ const imageDimensionDefault = '16x9'
 export default {
   props: {
     title: { type: String, default: '' },
+    desc: {type: String, default: ''},
     image: { type: String, default: '' },
     link: { type: String, default: '' },
     imageDimensions: { type: String, default: imageDimensionDefault }
@@ -103,11 +112,7 @@ export default {
   display: none;
 }
 .card img {
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-  transition: 0.8s ease-in-out all;
-  &:hover {
-    transform: scale(1.02);
-  }
+  border-radius: 24px;
+  padding: 15px 15px 15px 15px;
 }
 </style>

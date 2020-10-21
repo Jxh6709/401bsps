@@ -9,7 +9,7 @@ stops:
   - Stop 1
 author: Test Post 2
 date: 2020-10-11T19:09:53.747Z
-featureImage: /uploads/c1.png
+featureImage: /uploads/firsthero.jpg
 tags:
   - - Trail 1
     - Pocock Trail
