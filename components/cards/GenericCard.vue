@@ -28,14 +28,6 @@
             >
               {{ title }}
             </h3>
-            <p
-            :class="
-                `descrip
-                is- ${desc ? '' : 'empty-content-placeholder'}`
-              "
-            >
-              {{ desc }}
-            </p>
             <slot></slot>
           </nuxt-link>
           <slot name="tags"></slot>
@@ -49,7 +41,6 @@ const imageDimensionDefault = '16x9'
 export default {
   props: {
     title: { type: String, default: '' },
-    desc: {type: String, default: ''},
     image: { type: String, default: '' },
     link: { type: String, default: '' },
     imageDimensions: { type: String, default: imageDimensionDefault }
@@ -112,7 +103,7 @@ export default {
   display: none;
 }
 .card img {
-  border-radius: 24px;
-  padding: 5px 5px 5px 5px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 </style>
