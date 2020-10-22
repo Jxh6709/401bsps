@@ -28,7 +28,7 @@
       </h4>
       <div class = "blurb">
         <!-- <i>{{getContent()}}</i> -->
-        {{content}}
+        {{content | truncate(30, '...')}}
       </div>
     </template>
   </generic-card>
@@ -87,14 +87,17 @@ export default {
       default: 'Welcome to the Bergen Swamp'
     }
   },
-  data: {
-    blurb: ""
-  },
   computed: {
     datePretty() {
       return getFormattedDate(this.date)
     }
   },
+  filters: {
+    truncate: function (text, length, suffix) {
+      //https://stackoverflow.com/questions/35070271/vue-js-components-how-to-truncate-the-text-in-the-slot-element-in-a-component
+      return text.substring(0, length) + suffix;
+    },
+  }
   // methods: {
   //   getContent: () => {
   //     if (this.content.includes(".")) {
