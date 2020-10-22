@@ -28,7 +28,7 @@
       </h4>
       <div class = "blurb" v-if="content">
         <!-- <i>{{getContent()}}</i> -->
-        {{content | truncate(30, '...')}}
+        {{content | truncate(75, '...')}}
       </div>
     </template>
   </generic-card>
