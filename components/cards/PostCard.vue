@@ -26,14 +26,6 @@
           {{ datePretty }}
         </span>
       </h4>
-      <div class="tags">
-        <div v-for="tag in trails" :key="tag">
-          <nuxt-link :key="tag" :to="`/trails/${tag}`">{{ tag }}</nuxt-link>
-        </div>
-        <div v-for="tag in stops" :key="tag">
-          <nuxt-link :key="tag" :to="`/stops/${tag}`">{{ tag }}</nuxt-link>
-        </div>
-      </div>
     </template>
   </generic-card>
 </template> 
