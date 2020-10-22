@@ -14,7 +14,7 @@
         :tags="item.tags"
         :trails="item.trails"
         :stops="item.stops"
-        :content="item.content"
+        :content="item.content || null"
       />
       <div>
       </div>

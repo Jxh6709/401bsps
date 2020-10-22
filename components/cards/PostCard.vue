@@ -27,7 +27,8 @@
         </span>
       </h4>
       <div class = "blurb">
-        <i>{{getContent()}}</i>
+        <!-- <i>{{getContent()}}</i> -->
+        {{content}}
       </div>
     </template>
   </generic-card>
@@ -94,15 +95,15 @@ export default {
       return getFormattedDate(this.date)
     }
   },
-  methods: {
-    getContent: () => {
-      if (this.content.includes(".")) {
-        this.blurb = this.content.split(".")[0];
-      }else {
-        this.blurb = this.content;
-      }
-    }
-  },
+  // methods: {
+  //   getContent: () => {
+  //     if (this.content.includes(".")) {
+  //       this.blurb = this.content.split(".")[0];
+  //     }else {
+  //       this.blurb = this.content;
+  //     }
+  //   }
+  // },
 }
 </script>
 <style lang="scss">
