@@ -26,6 +26,9 @@
           {{ datePretty }}
         </span>
       </h4>
+      <div class = "blurb">
+        <i>{{blurb}}</i>
+      </div>
     </template>
   </generic-card>
 </template> 
@@ -77,13 +80,29 @@ export default {
       default() {
         return []
       }
+    },
+    content: {
+      type: String,
+      default: 'Welcome to the Bergen Swamp'
     }
+  },
+  data: {
+    blurb: ""
   },
   computed: {
     datePretty() {
       return getFormattedDate(this.date)
     }
-  }
+  },
+  methods: {
+    getContent: () => {
+      if (this.content.includes(".")) {
+        this.blurb = this.content.split(".")[0];
+      }else {
+        this.blurb = this.content;
+      }
+    }
+  },
 }
 </script>
 <style lang="scss">
