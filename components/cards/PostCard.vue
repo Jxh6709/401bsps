@@ -27,7 +27,7 @@
         </span>
       </h4>
       <div class = "blurb">
-        <i>{{blurb}}</i>
+        <i>{{getContent()}}</i>
       </div>
     </template>
   </generic-card>
