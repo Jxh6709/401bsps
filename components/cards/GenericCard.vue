@@ -117,7 +117,8 @@ export default {
 .tags {
   z-index: 1;
   position: relative;
-  margin-left: -0.5rem;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .tags div {
@@ -128,12 +129,12 @@ export default {
   margin: 5px;
 }
 
-.tags div:hover{
+.tags div:hover {
   background: #ebeced;
   transition: .5s all;
 }
 
-.tags a{
+.tags a {
   color: black;
   transition: .25s all;
 }
@@ -148,7 +149,8 @@ export default {
   display: none;
 }
 .card img {
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+  border-radius: 24px;
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 5px;
 }
 </style>

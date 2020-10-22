@@ -93,6 +93,7 @@ export default {
     color: white;
     opacity: 0;
     transition: 0.4s ease all;
+    min-height: 400px;
     border-radius: 24px;
   }
   .card-content div,

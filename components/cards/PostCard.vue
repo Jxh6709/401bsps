@@ -30,6 +30,9 @@
         <!-- <i>{{getContent()}}</i> -->
         {{content | truncate(75, '...')}}
       </div>
+      <div clas ="view">
+         🡢
+      </div>
     </template>
   </generic-card>
 </template> 
@@ -119,19 +122,28 @@ export default {
 @media screen and (max-width: 1215px){#trails-page .card{flex-basis: calc(50% - .5rem);}}
 @media screen and (max-width: 768px){#trails-page .card, #stops-page .card{flex-basis: 100%;}}
 
+.blurb {
+  color: #808080;
+}
+
+.view {
+  text-align: right;
+  color: black;
+  transition: .5s all;
+}
 
 .tags {
   z-index: 1;
   position: relative;
-  margin-left: -0.5rem;
+  margin-left: 10px;
 }
 
 .tags div {
   border: 0.5px solid #000000;
-  padding: 0.3em .7em;
+  padding: 0.1em .7em;
   border-radius: 32px;
   transition: .25s all;
-  margin: 5px;
+  margin-left: 10px;
 }
 
 .tags div:hover{
@@ -142,6 +154,7 @@ export default {
 .tags a{
   color: black;
   transition: .25s all;
+  font-weight: lighter;
 }
 
 .post-tags {
