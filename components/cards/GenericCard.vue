@@ -1,5 +1,13 @@
 <template>
   <div class="card">
+    <div v-if="trails || stops" class = "tags">
+      <div v-for="tag in trails" :key="tag">
+          <nuxt-link :key="tag" :to="`/trails/${tag}`">{{ tag }}</nuxt-link>
+        </div>
+        <div v-for="tag in stops" :key="tag">
+          <nuxt-link :key="tag" :to="`/stops/${tag}`">{{ tag }}</nuxt-link>
+        </div>
+    </div>
     <div class="card-image">
       <component :is="link ? 'nuxt-link' : 'span'" :to="link">
         <figure :class="`image is-${imageRatioClass}`">
@@ -43,7 +51,20 @@ export default {
     title: { type: String, default: '' },
     image: { type: String, default: '' },
     link: { type: String, default: '' },
-    imageDimensions: { type: String, default: imageDimensionDefault }
+    imageDimensions: { type: String, default: imageDimensionDefault },
+    trails: {
+      type: Array,
+      default() {
+        return []
+      }
+    },
+    stops: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+
   },
   computed: {
     imageRatioClass() {
@@ -91,6 +112,30 @@ export default {
   &.subtitle {
     width: 70%;
   }
+}
+
+.tags {
+  z-index: 1;
+  position: relative;
+  margin-left: -0.5rem;
+}
+
+.tags div {
+  border: 0.5px solid #000000;
+  padding: 0.3em .7em;
+  border-radius: 32px;
+  transition: .25s all;
+  margin: 5px;
+}
+
+.tags div:hover{
+  background: #ebeced;
+  transition: .5s all;
+}
+
+.tags a{
+  color: black;
+  transition: .25s all;
 }
 </style>
 <style lang="scss">

@@ -8,6 +8,8 @@
         $siteConfig.cards.imageDimensions ||
         null
     "
+    :trails="trails"
+    :stops="stops"
   >
     <template v-slot:default>
       <h4
