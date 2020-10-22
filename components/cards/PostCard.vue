@@ -30,7 +30,7 @@
         <!-- <i>{{getContent()}}</i> -->
         {{content | truncate(75, '...')}}
       </div>
-      <div clas ="view">
+      <div class="view">
          🡢
       </div>
     </template>
@@ -129,7 +129,6 @@ export default {
 .view {
   text-align: right;
   color: black;
-  transition: .5s all;
 }
 
 .tags {
