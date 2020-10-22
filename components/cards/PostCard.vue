@@ -26,7 +26,7 @@
           {{ datePretty }}
         </span>
       </h4>
-      <div class = "blurb">
+      <div class = "blurb" v-if="content">
         <!-- <i>{{getContent()}}</i> -->
         {{content | truncate(30, '...')}}
       </div>
